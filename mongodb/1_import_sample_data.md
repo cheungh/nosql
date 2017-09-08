@@ -1,6 +1,8 @@
-# Assumed mongodb and tools already installed.
+# Import sample data from offical Mongo db website
 
-## Download sample data 
+Assumed mongodb and tools already installed.  
+
+## Download sample data
 from https://docs.mongodb.com/getting-started/shell/import-data/
 
 ## Download via wget
