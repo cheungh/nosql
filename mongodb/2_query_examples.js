@@ -1,5 +1,15 @@
 use test;
 
+// this is like mysql show tables in a database
+db.getCollectionNames();
+
+// rename table (collection name) from restaurants to renamed_restuarants
+// rename table (collection name) from restaurants to renamed_restuarants
+db.restaurants.renameCollection('renamed_restuarants');
+
+// rename table (collection name) from renamed_restuarants to restaurants
+db.renamed_restuarants.renameCollection('restuarants');
+
 db.restaurants.findOne({'name' : 'Wendy\'S'});
 
 db.restaurants.count();
@@ -32,3 +42,4 @@ db.restaurants.find({"name" : {"$ne" : ""}}).sort({name: 1}).limit(10).forEach(
 		print( "restaurant name: " + Doc.name ); 
 });
     
+   
