@@ -42,4 +42,8 @@ db.restaurants.find({"name" : {"$ne" : ""}}).sort({name: 1}).limit(10).forEach(
 		print( "restaurant name: " + Doc.name ); 
 });
     
-   
+// same as show tables
+db.getCollectionNames();
+
+// rename table (collection name) from restaurants to renamed_restuarants
+db.restaurants.renameCollection('renamed_restuarants');
